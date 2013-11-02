@@ -15,7 +15,7 @@ module Guard
     end
 
     def start
-      cmd = "cd #{@current_path} && bundle exec rackup #{@current_path}/#{@faye_init} -s thin -E test"
+      cmd = "cd #{@current_path} && bundle exec rackup #{@current_path}/#{@faye_init} -E test"
       
       result = ''
       
